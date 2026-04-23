@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gimnasio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="gimnasio.xsd">
+
+    <clientes>
+        <cliente>
+            <id>1</id>
+            <nombre>Juan Pérez</nombre>
+            <email>juan@email.com</email>
+            <telefono>123456789</telefono>
+        </cliente>
+
+        <cliente>
+            <id>2</id>
+            <nombre>Ana López</nombre>
+            <email>ana@email.com</email>
+            <telefono>987654321</telefono>
+        </cliente>
+    </clientes>
+
+    <clases>
+        <clase>
+            <id>1</id>
+            <nombre>Spinning</nombre>
+            <horario>10:00</horario>
+        </clase>
+
+        <clase>
+            <id>2</id>
+            <nombre>Yoga</nombre>
+            <horario>18:00</horario>
+        </clase>
+    </clases>
+
+</gimnasio>
