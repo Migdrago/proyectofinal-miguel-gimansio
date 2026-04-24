@@ -1,36 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <gimnasio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="gimnasio.xsd">
+          xsi:noNamespaceSchemaLocation="gimnasio.xsd">
 
     <clientes>
         <cliente>
-            <id>1</id>
+            <id_cliente>1</id_cliente>
             <nombre>Juan Pérez</nombre>
             <email>juan@email.com</email>
             <telefono>123456789</telefono>
         </cliente>
-
         <cliente>
-            <id>2</id>
+            <id_cliente>2</id_cliente>
             <nombre>Ana López</nombre>
             <email>ana@email.com</email>
             <telefono>987654321</telefono>
         </cliente>
+        <cliente>
+            <id_cliente>3</id_cliente>
+            <nombre>Luis García</nombre>
+            <email>luis@email.com</email>
+            <telefono>654987321</telefono>
+        </cliente>
+        <cliente>
+            <id_cliente>4</id_cliente>
+            <nombre>Marta Sánchez</nombre>
+            <email>marta@email.com</email>
+            <telefono>111222333</telefono>
+        </cliente>
+        <cliente>
+            <id_cliente>5</id_cliente>
+            <nombre>Pedro Torres</nombre>
+            <email>pedro@email.com</email>
+            <telefono>444555666</telefono>
+        </cliente>
+        <cliente>
+            <id_cliente>6</id_cliente>
+            <nombre>Lucía Fernández</nombre>
+            <email>lucia@email.com</email>
+            <telefono>777888999</telefono>
+        </cliente>
     </clientes>
+
+    <entrenadores>
+        <entrenador>
+            <id_entrenador>1</id_entrenador>
+            <nombre>Carlos Ruiz</nombre>
+            <especialidad>Fitness</especialidad>
+        </entrenador>
+        <entrenador>
+            <id_entrenador>2</id_entrenador>
+            <nombre>Laura Gómez</nombre>
+            <especialidad>Yoga</especialidad>
+        </entrenador>
+        <entrenador>
+            <id_entrenador>3</id_entrenador>
+            <nombre>David Martín</nombre>
+            <especialidad>Crossfit</especialidad>
+        </entrenador>
+    </entrenadores>
 
     <clases>
         <clase>
-            <id>1</id>
+            <id_clase>1</id_clase>
             <nombre>Spinning</nombre>
             <horario>10:00</horario>
+            <id_entrenador>1</id_entrenador>
         </clase>
-
         <clase>
-            <id>2</id>
+            <id_clase>2</id_clase>
             <nombre>Yoga</nombre>
             <horario>18:00</horario>
+            <id_entrenador>2</id_entrenador>
+        </clase>
+        <clase>
+            <id_clase>3</id_clase>
+            <nombre>Crossfit</nombre>
+            <horario>12:00</horario>
+            <id_entrenador>3</id_entrenador>
+        </clase>
+        <clase>
+            <id_clase>4</id_clase>
+            <nombre>Pilates</nombre>
+            <horario>09:00</horario>
+            <id_entrenador>2</id_entrenador>
+        </clase>
+        <clase>
+            <id_clase>5</id_clase>
+            <nombre>Zumba</nombre>
+            <horario>17:00</horario>
+            <id_entrenador>1</id_entrenador>
+        </clase>
+        <clase>
+            <id_clase>6</id_clase>
+            <nombre>HIIT</nombre>
+            <horario>19:00</horario>
+            <id_entrenador>3</id_entrenador>
         </clase>
     </clases>
+
+    <inscripciones>
+        <inscripcion>
+            <id_cliente>1</id_cliente>
+            <id_clase>1</id_clase>
+            <fecha>2026-04-20</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>2</id_cliente>
+            <id_clase>2</id_clase>
+            <fecha>2026-04-20</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>3</id_cliente>
+            <id_clase>3</id_clase>
+            <fecha>2026-04-21</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>4</id_cliente>
+            <id_clase>4</id_clase>
+            <fecha>2026-04-21</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>5</id_cliente>
+            <id_clase>5</id_clase>
+            <fecha>2026-04-22</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>6</id_cliente>
+            <id_clase>6</id_clase>
+            <fecha>2026-04-22</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>1</id_cliente>
+            <id_clase>3</id_clase>
+            <fecha>2026-04-23</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>2</id_cliente>
+            <id_clase>5</id_clase>
+            <fecha>2026-04-23</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>3</id_cliente>
+            <id_clase>1</id_clase>
+            <fecha>2026-04-24</fecha>
+        </inscripcion>
+        <inscripcion>
+            <id_cliente>4</id_cliente>
+            <id_clase>2</id_clase>
+            <fecha>2026-04-24</fecha>
+        </inscripcion>
+    </inscripciones>
 
 </gimnasio>
