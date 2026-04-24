@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner miS = new Scanner(System.in);
         int opcion;
 
         do {
@@ -17,8 +17,8 @@ public class App {
             System.out.println("4. Eliminar cliente");
             System.out.println("0. Salir");
 
-            opcion = sc.nextInt();
-            sc.nextLine();
+            opcion = miS.nextInt();
+            miS.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -27,31 +27,31 @@ public class App {
 
                 case 2:
                     System.out.print("Nombre: ");
-                    String nombre = sc.nextLine();
+                    String nombre = miS.nextLine();
 
                     System.out.print("Email: ");
-                    String email = sc.nextLine();
+                    String email = miS.nextLine();
 
                     System.out.print("Telefono: ");
-                    String tel = sc.nextLine();
+                    String tel = miS.nextLine();
 
                     ClienteControl.insertar(nombre, email, tel);
                     break;
 
                 case 3:
                     System.out.print("ID: ");
-                    int id = sc.nextInt();
-                    sc.nextLine();
+                    int id = miS.nextInt();
+                    miS.nextLine();
 
                     System.out.print("Nuevo telefono: ");
-                    String t = sc.nextLine();
-
+                    String t = miS.nextLine();
                     ClienteControl.actualizar(id, t);
                     break;
 
                 case 4:
                     System.out.print("ID: ");
-                    int idDel = sc.nextInt();
+                    int idDel = miS.nextInt();
+                    miS.nextLine();
 
                     ClienteControl.eliminar(idDel);
                     break;
