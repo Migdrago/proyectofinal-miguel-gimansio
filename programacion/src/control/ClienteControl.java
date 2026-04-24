@@ -6,23 +6,29 @@ import java.util.ArrayList;
 
 public class ClienteControl {
 
-    public static void verClientes() {
+    public void verClientes() {
+
         ArrayList<Cliente> lista = ClienteDAO.getClientes();
 
         for (Cliente c : lista) {
-            System.out.println(c.getId() + " - " + c.getNombre());
+            System.out.println(
+                c.getId() + " - " +
+                c.getNombre() + " - " +
+                c.getEmail() + " - " +
+                c.getTelefono()
+            );
         }
     }
 
-    public static void insertar(String nombre, String email, String telefono) {
+    public void insertar(String nombre, String email, String telefono) {
         ClienteDAO.insertar(nombre, email, telefono);
     }
 
-    public static void actualizar(int id, String telefono) {
+    public void actualizar(int id, String telefono) {
         ClienteDAO.actualizar(id, telefono);
     }
 
-    public static void eliminar(int id) {
+    public void eliminar(int id) {
         ClienteDAO.eliminar(id);
     }
 }
